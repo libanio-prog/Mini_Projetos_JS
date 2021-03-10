@@ -9,3 +9,9 @@ Faça um Prompt que peça a idade do usuário e logo em seguida mostre a idade e
 
 ex002
 Faça um Prompt que peça um número e em um alert insira a mensagem "O quadrado desse numero é (resutado)"
+
+ex003 
+crie um  botão eo quando clicar no botão ele gera  um alert com  uma mensagem
+
+ex004 
+crie um formulário que aceite somente numero e quando  submeter o valor ele dispara um alert com o quadrado desse numero 
