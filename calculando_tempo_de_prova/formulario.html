@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcuradora </title>
+</head>
+<body>
+<div id="corpoFormulario" >
+    
+    <div id="titulo" ><h1>Calcule seu tempo de prova</h1></div>
+    <div id="resumo" ><p>prencha os dados no fomulário a baixo e você terá como resultado o tempo de dedicação para cada quetão de sua prova </p></div>
+    <form action="">
+    
+        <div id="nome" >
+            <label for="nome">NOME</label>
+            <input type="text">
+        </div>
+        <div id="tempo" >
+            <label for="tProva">Tempo total de prova</label>
+            <input type="number" name="tProva" id="tProva">
+        </div>
+        <div id="nQuestoes" >
+            <label for="nQuestoes">Numero total de questões</label>
+            <input type="number" name="nquestao" id="nquestao">
+        </div>
+        <input type="button" value="somar" onclick="somar()">
+      <div id="res" >rsultado</div>
+    </form>
+
+    <script>
+        function somar(){
+            let tpn = document.querySelector('#tProva')
+            let nqt = document.querySelector('#nquestao')
+            let res = document.getElementById('res')
+            let n1 = tpn.value
+            let n2 = nqt.value
+            n1 = parseInt (n1)
+            n2 = parseInt (n2)
+            let conta = n1/n2
+            res.innerHTML =` o resultado é ${conta}`
+        }
+
+
+
+    </script>
+   
+</div>
