@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculando a média </title>
+</head>
+<body>
+    <h1>Calcule a nota média do aluno </h1>
+        <div id="form" >
+            <form action="">
+
+                <div class="campo" >
+                    <label for="nome">Digite o nome do 
+                        aluno 
+                    </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="campo" >
+                    <label for="nota1"> Digite a nota do aluno </label>
+                    <input type="number" name="nota1" id="nota1">
+                </div>
+                <div class="campo" >
+                    <label for="">Digite a nota do aluno </label>
+                    <input type="number" name="nota2" id="nota2">
+                </div>
+                            
+
+                <div id="botton" > 
+                    <input type="button" value="calcular" onclick="calcular()" >
+                </div>
+               
+
+            </form>
+           
+        </div>
+
+        <div id="res" > </div>
+        <div id="situacao" ></div>
+        <script>
+            function calcular(){
+                var nota1 = parseFloat (document.getElementById('nota1').value)
+                var nota2 = parseFloat (document.getElementById ('nota2').value)
+                var media = (nota1+nota2)/2
+                var name = document.querySelector('#nome').value
+                            
+                res.innerHTML = `A Média do aluno é ${media}`
+                if (media >= 7 ){
+                    document.querySelector('#situacao').innerHTML = `O aluno ${name} foi aprovado!`
+                }
+                else if (media == 10){
+                    document.querySelector('#situacao').innerHTML = `O aluno ${name} foi aprovado com distinção!`
+                }
+                else {
+                   document.querySelector('#situacao').innerHTML = `O aluno ${name} foi reprovado!`
+                   
+                }
+
+            }
+        </script>
+</body>
+</html>

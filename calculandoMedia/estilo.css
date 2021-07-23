@@ -1,0 +1,39 @@
+h1{text-align: center;}
+
+#form{
+    margin: auto;
+    border: 2px  solid black; 
+    border-radius: 10px;
+    width: 500px;
+    background-image:linear-gradient(45deg, #A2C7EE, #5AA0EB, #467DB8);
+}
+
+.campo{
+    margin: 10px;
+}
+
+#botton{
+    margin: 10px;
+   
+}
+#res{
+    text-align: center;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+#situacao {
+    margin: auto;
+    background-color: rgb(250, 217, 217);
+    text-align: center;
+    font-family: sans-serif;
+    width: 500px;
+   }
+   #nota1{
+       margin-left: 4%;
+   }
+   #nota2{
+       margin-left: 4%;
+   }
+   #nome{
+       margin-left: 2%;}
+
